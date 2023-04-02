@@ -1,0 +1,22 @@
+-- MySQL script to create table in database
+
+-- Extension is needed if it is wanted to run it from idle of your preference
+
+CREATE DATABASE IF NOT EXISTS performance;
+
+USE Performance;
+
+CREATE TABLE IF NOT EXISTS students(
+	ID SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT, 
+	GENDER VARCHAR(7),
+    ETHNICITY VARCHAR(8),
+	`PARENTAL EDUCATION LEVEL` VARCHAR(50),
+    LUNCH VARCHAR(13),
+    `TEST PREPARATION COURSE` VARCHAR(10),
+    `MATH SCORE` TINYINT,
+	`READING SCORE` TINYINT,
+    `WRITING SCORE` TINYINT,
+    PRIMARY KEY (ID)
+) ENGINE InnoDB;
+
+
